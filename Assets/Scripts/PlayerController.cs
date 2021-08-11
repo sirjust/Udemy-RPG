@@ -9,8 +9,14 @@ public class PlayerController : MonoBehaviour {
 
     public Animator anim;
 
+    public static PlayerController instance;
+
 	// Use this for initialization
 	void Start () {
+        if (instance == null) instance = this;
+        else Destroy(gameObject); 
+
+        DontDestroyOnLoad(gameObject);
         moveSpeed = 3f;
 	}
 	
