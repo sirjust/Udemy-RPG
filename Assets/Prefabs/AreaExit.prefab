@@ -28,6 +28,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1661628302689302
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4952338419554182}
+  - component: {fileID: 114398224257527084}
+  m_Layer: 0
+  m_Name: AreaEntrance
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!4 &4812979017325234
 Transform:
   m_ObjectHideFlags: 1
@@ -35,10 +51,24 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1659554004687678}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 11.83, y: 0.46, z: 0.048828125}
+  m_LocalPosition: {x: -4.76, y: -0.97, z: 0.048828125}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4952338419554182}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4952338419554182
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1661628302689302}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 2, y: -0.38, z: -0.14648438}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 4812979017325234}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &61395796265779114
@@ -66,6 +96,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1.54}
   m_EdgeRadius: 0
+--- !u!114 &114398224257527084
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1661628302689302}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: acb3180266063fc4e869c3e833d479b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TransitionName: Countryside-1
 --- !u!114 &114453156769056326
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -77,4 +119,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ab3a0631b05d044d80bb66d340cf707, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AreaToLoad: Test2
+  AreaToLoad: Test
+  AreaTransitionName: 

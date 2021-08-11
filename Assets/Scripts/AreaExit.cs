@@ -7,6 +7,8 @@ public class AreaExit : MonoBehaviour {
 
 	public string AreaToLoad;
 
+	public string AreaTransitionName;
+
 	// Use this for initialization
 	void Start () {
 		
@@ -22,6 +24,8 @@ public class AreaExit : MonoBehaviour {
 		if(other.tag == "Player")
         {
 			SceneManager.LoadScene(AreaToLoad);
+
+			PlayerController.instance.AreaTransitionName = AreaTransitionName;
         }
     }
 }
