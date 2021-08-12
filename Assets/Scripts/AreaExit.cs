@@ -9,9 +9,11 @@ public class AreaExit : MonoBehaviour {
 
 	public string AreaTransitionName;
 
+	public AreaEntrance Entrance;
+
 	// Use this for initialization
 	void Start () {
-		
+		Entrance.TransitionName = AreaTransitionName;
 	}
 	
 	// Update is called once per frame
