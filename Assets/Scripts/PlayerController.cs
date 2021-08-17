@@ -19,7 +19,7 @@ public class PlayerController : MonoBehaviour {
         else Destroy(gameObject); 
 
         DontDestroyOnLoad(gameObject);
-        moveSpeed = 3f;
+        moveSpeed = 5f;
 	}
 	
 	// Update is called once per frame
