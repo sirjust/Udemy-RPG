@@ -2517,6 +2517,11 @@ TilemapCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
+--- !u!4 &744952254 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4630191890358704, guid: 4a214e698d5c607468000452f9345267,
+    type: 2}
+  m_PrefabInternal: {fileID: 763177497}
 --- !u!1001 &763177497
 Prefab:
   m_ObjectHideFlags: 0
@@ -8071,6 +8076,61 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1001 &1005191875
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4812979017325234, guid: 148c0b366bab2354884d1c2830e43102, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 25.47
+      objectReference: {fileID: 0}
+    - target: {fileID: 4812979017325234, guid: 148c0b366bab2354884d1c2830e43102, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -6.32
+      objectReference: {fileID: 0}
+    - target: {fileID: 4812979017325234, guid: 148c0b366bab2354884d1c2830e43102, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0.048828125
+      objectReference: {fileID: 0}
+    - target: {fileID: 4812979017325234, guid: 148c0b366bab2354884d1c2830e43102, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4812979017325234, guid: 148c0b366bab2354884d1c2830e43102, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4812979017325234, guid: 148c0b366bab2354884d1c2830e43102, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4812979017325234, guid: 148c0b366bab2354884d1c2830e43102, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4812979017325234, guid: 148c0b366bab2354884d1c2830e43102, type: 2}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4952338419554182, guid: 148c0b366bab2354884d1c2830e43102, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 4952338419554182, guid: 148c0b366bab2354884d1c2830e43102, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -1.06
+      objectReference: {fileID: 0}
+    - target: {fileID: 114453156769056326, guid: 148c0b366bab2354884d1c2830e43102,
+        type: 2}
+      propertyPath: AreaToLoad
+      value: Town
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 148c0b366bab2354884d1c2830e43102, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!1001 &1978690443
 Prefab:
   m_ObjectHideFlags: 0
@@ -8110,6 +8170,16 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114519685819048034, guid: 1fd9c3e5fd95a6a4d9ce1d9f70724bfd,
+        type: 2}
+      propertyPath: Target
+      value: 
+      objectReference: {fileID: 744952254}
+    - target: {fileID: 114519685819048034, guid: 1fd9c3e5fd95a6a4d9ce1d9f70724bfd,
+        type: 2}
+      propertyPath: Map
+      value: 
+      objectReference: {fileID: 809426518}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1fd9c3e5fd95a6a4d9ce1d9f70724bfd, type: 2}
   m_IsPrefabAsset: 0
