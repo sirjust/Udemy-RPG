@@ -11,6 +11,9 @@ public class AreaExit : MonoBehaviour {
 
 	public AreaEntrance Entrance;
 
+	public float WaitToLoad = 1f;
+	private bool ShouldLoadAfterFade;
+
 	// Use this for initialization
 	void Start () {
 		Entrance.TransitionName = AreaTransitionName;
@@ -18,14 +21,23 @@ public class AreaExit : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
+		if(ShouldLoadAfterFade == true)
+        {
+			WaitToLoad -= Time.deltaTime;
+			if (WaitToLoad <= 0)
+            {
+				ShouldLoadAfterFade = false;
+				SceneManager.LoadScene(AreaToLoad);
+            }
+        }
 	}
 
 	private void OnTriggerEnter2D(Collider2D other)
     {
 		if(other.tag == "Player")
         {
-			SceneManager.LoadScene(AreaToLoad);
+			ShouldLoadAfterFade = true;
+			UIFade.instance.FadeToBlack();
 
 			PlayerController.instance.AreaTransitionName = AreaTransitionName;
         }
