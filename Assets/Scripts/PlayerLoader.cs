@@ -7,7 +7,7 @@ public class PlayerLoader : MonoBehaviour {
 	public GameObject Player;
 
 	// Use this for initialization
-	void Start () {
+	void Awake () {
 		if (PlayerController.instance == null) Instantiate(Player);
 	}
 	

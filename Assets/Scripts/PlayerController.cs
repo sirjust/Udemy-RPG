@@ -19,7 +19,10 @@ public class PlayerController : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         if (instance == null) instance = this;
-        else Destroy(gameObject); 
+        else
+        {
+            if(instance != this) Destroy(gameObject);
+        }
 
         DontDestroyOnLoad(gameObject);
         moveSpeed = 5f;
