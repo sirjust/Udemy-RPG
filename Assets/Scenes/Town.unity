@@ -8543,6 +8543,30 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &754063030 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1946268220048552, guid: b7bcfe1579b333d4abf86dec2e9f534c,
+    type: 2}
+  m_PrefabInternal: {fileID: 412252930}
+--- !u!114 &754063031
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 754063030}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e528ad3dae198ac40b4bd77c23af0997, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DialogText: {fileID: 1708155816}
+  NameText: {fileID: 1602032820}
+  DialogBox: {fileID: 1855016565}
+  NameBox: {fileID: 1669202018}
+  DialogLines:
+  - Hello
+  - World
+  CurrentLine: 0
 --- !u!1 &856322586
 GameObject:
   m_ObjectHideFlags: 0
@@ -8595,6 +8619,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1501437843}
   - component: {fileID: 1501437842}
+  - component: {fileID: 1501437845}
+  - component: {fileID: 1501437844}
+  - component: {fileID: 1501437846}
   m_Layer: 0
   m_Name: NPC_0
   m_TagString: Untagged
@@ -8661,6 +8688,71 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1501437844
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1501437841}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.0337255, y: -0.101377964}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.9375, y: 1}
+    newSize: {x: 0.9375, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.7699308, y: 1.6071596}
+  m_EdgeRadius: 0
+--- !u!114 &1501437845
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1501437841}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8579711772549049b8fdf757b7b9d88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Lines:
+  - It works!
+  - Or does it?
+  - ???
+--- !u!61 &1501437846
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1501437841}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.9375, y: 1}
+    newSize: {x: 0.9375, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.9375, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &1602032818
 GameObject:
   m_ObjectHideFlags: 0
@@ -12315,7 +12407,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1855016566
 RectTransform:
   m_ObjectHideFlags: 0
@@ -12333,7 +12425,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -4.6, y: -312.8}
+  m_AnchoredPosition: {x: -4.5999756, y: -312.80005}
   m_SizeDelta: {x: -91.3, y: -726}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1855016567
