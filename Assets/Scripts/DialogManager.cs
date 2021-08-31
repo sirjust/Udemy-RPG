@@ -30,14 +30,17 @@ public class DialogManager : MonoBehaviour {
 			{
 				if (!JustStarted)
 				{
+					CurrentLine++;
+
+					if (CurrentLine >= DialogLines.Length)
 					{
-						CurrentLine++;
-						if (CurrentLine >= DialogLines.Length)
-						{
-							DialogBox.SetActive(false);
-							PlayerController.instance.CanMove = true;
-						}
-						else DialogText.text = DialogLines[CurrentLine];
+						DialogBox.SetActive(false);
+						PlayerController.instance.CanMove = true;
+					}
+					else
+					{
+						CheckIfName();
+						DialogText.text = DialogLines[CurrentLine];
 					}
 				}
 				else
@@ -48,16 +51,29 @@ public class DialogManager : MonoBehaviour {
         }
 	}
 
-	public void ShowDialog(string[] lines)
+	public void ShowDialog(string[] lines, bool isPerson)
     {
 		DialogLines = lines;
 		CurrentLine = 0;
+
+		CheckIfName();
 
 		DialogText.text = DialogLines[CurrentLine];
 		DialogBox.SetActive(true);
 
 		JustStarted = true;
 
+		NameBox.SetActive(isPerson);
+
 		PlayerController.instance.CanMove = false;
 	}
+
+	public void CheckIfName()
+    {
+        if (DialogLines[CurrentLine].StartsWith("n-"))
+        {
+			NameText.text = DialogLines[CurrentLine].Replace("n-", "");
+			CurrentLine++;
+        }
+    }
 }

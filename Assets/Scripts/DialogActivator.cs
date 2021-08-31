@@ -8,6 +8,8 @@ public class DialogActivator: MonoBehaviour {
 
 	private bool CanActivate;
 
+	public bool IsPerson = true;
+
 	// Use this for initialization
 	void Start () {
 		
@@ -17,7 +19,7 @@ public class DialogActivator: MonoBehaviour {
 	void Update () {
         if (CanActivate && Input.GetButtonDown("Fire1") && !DialogManager.instance.DialogBox.activeInHierarchy)
         {
-			DialogManager.instance.ShowDialog(Lines);
+			DialogManager.instance.ShowDialog(Lines, IsPerson);
         }
 	}
 
