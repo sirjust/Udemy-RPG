@@ -326,6 +326,48 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 224136974917056998, guid: b7bcfe1579b333d4abf86dec2e9f534c,
     type: 2}
   m_PrefabInternal: {fileID: 412252930}
+--- !u!1001 &412790781
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4370894977399428, guid: 65420c377bb35fa469c68ca4c98bb0e4, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 2.1301115
+      objectReference: {fileID: 0}
+    - target: {fileID: 4370894977399428, guid: 65420c377bb35fa469c68ca4c98bb0e4, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 1.4202206
+      objectReference: {fileID: 0}
+    - target: {fileID: 4370894977399428, guid: 65420c377bb35fa469c68ca4c98bb0e4, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -0.171875
+      objectReference: {fileID: 0}
+    - target: {fileID: 4370894977399428, guid: 65420c377bb35fa469c68ca4c98bb0e4, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4370894977399428, guid: 65420c377bb35fa469c68ca4c98bb0e4, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4370894977399428, guid: 65420c377bb35fa469c68ca4c98bb0e4, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4370894977399428, guid: 65420c377bb35fa469c68ca4c98bb0e4, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4370894977399428, guid: 65420c377bb35fa469c68ca4c98bb0e4, type: 2}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 65420c377bb35fa469c68ca4c98bb0e4, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!1 &424818164
 GameObject:
   m_ObjectHideFlags: 0
@@ -1549,6 +1591,12 @@ Prefab:
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 114337971603125574, guid: e3f62280a0c5a464db651b1b2b0252c7,
+        type: 2}
+      propertyPath: Manager
+      value: 
+      objectReference: {fileID: 1485409248168308, guid: 65420c377bb35fa469c68ca4c98bb0e4,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e3f62280a0c5a464db651b1b2b0252c7, type: 2}
   m_IsPrefabAsset: 0
@@ -8609,64 +8657,6 @@ Transform:
   - {fileID: 1612255622}
   m_Father: {fileID: 0}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1113018824
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1113018826}
-  - component: {fileID: 1113018825}
-  m_Layer: 0
-  m_Name: PlayerStat
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1113018825
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1113018824}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a832587d73442144fba164d426d4e739, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CharacterName: Tim
-  PlayerLevel: 1
-  CurrentExp: 250
-  ExpToNextLevel: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
-  MaxLevel: 10
-  BaseExp: 1000
-  CurrentHealth: 0
-  MaximumHealth: 100
-  CurrentMp: 0
-  MaximumMp: 30
-  MpLevelBonus: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
-  Strength: 15
-  Defense: 12
-  WeaponPower: 0
-  ArmorPower: 0
-  EquippedWeapon: 
-  EquippedArmor: 
-  CharacterImage: {fileID: 21300000, guid: 4e19084039040354d8c16aced2b3a7a0, type: 3}
---- !u!4 &1113018826
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1113018824}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.1301115, y: 1.4202206, z: -0.171875}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1379446758
 GameObject:

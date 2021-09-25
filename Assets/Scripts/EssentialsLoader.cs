@@ -7,6 +7,7 @@ public class EssentialsLoader : MonoBehaviour
 
     public GameObject UICanvas;
     public GameObject Player;
+    public GameObject Manager;
 
     // Use this for initialization
     void Start()
@@ -16,6 +17,11 @@ public class EssentialsLoader : MonoBehaviour
         {
             PlayerController clone = Instantiate(Player).GetComponent<PlayerController>();
             PlayerController.instance = clone;
+        }
+
+        if(GameManager.instance == null)
+        {
+            Instantiate(Manager);
         }
     }
 
