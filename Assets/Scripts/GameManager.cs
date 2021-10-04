@@ -7,6 +7,8 @@ public class GameManager : MonoBehaviour {
 	public static GameManager instance;
 	public CharacterStats[] PlayerStats;
 
+	public bool GameMenuOpen, DialogActive, FadingBetweenAreas;
+
 	// Use this for initialization
 	void Start () {
 		instance = this;
@@ -16,6 +18,12 @@ public class GameManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
+		if(GameMenuOpen || DialogActive || FadingBetweenAreas)
+        {
+			PlayerController.instance.CanMove = false;
+        } else
+        {
+			PlayerController.instance.CanMove = true;
+        }
 	}
 }
