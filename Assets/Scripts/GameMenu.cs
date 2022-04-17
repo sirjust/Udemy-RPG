@@ -14,6 +14,11 @@ public class GameMenu : MonoBehaviour {
 	public Image[] CharImage;
 	public GameObject[] CharStatHolder;
 
+	public GameObject[] StatusButtons;
+
+	public Text StatusName, StatusHp, StatusMp, StatusStrength, StatusDefense, StatusWeaponEquipped, StatusWeaponPower, StatusArmorEquipped, StatusArmorPower, StatusExp;
+	public Image StatusImage;
+
 	// Use this for initialization
 	void Start () {
 		
@@ -64,6 +69,8 @@ public class GameMenu : MonoBehaviour {
 
 	public void ToggleWindow(int windowNumber)
     {
+		UpdateMainStats();
+
         for (int i = 0; i < Windows.Length; i++)
         {
 			if(i == windowNumber)
@@ -87,4 +94,34 @@ public class GameMenu : MonoBehaviour {
 
 		GameManager.instance.GameMenuOpen = false;
     }
+
+	public void OpenStatus()
+    {
+		UpdateMainStats();
+
+		// Update information that is shown
+		StatusCharacter(0);
+
+        for (int i = 0; i < StatusButtons.Length; i++)
+        {
+			StatusButtons[i].SetActive(PlayerStats[i].gameObject.activeInHierarchy);
+			StatusButtons[i].GetComponentInChildren<Text>().text = PlayerStats[i].CharacterName;
+        }
+    }
+
+	public void StatusCharacter(int selected)
+    {
+		StatusName.text = PlayerStats[selected].CharacterName;
+		StatusHp.text = "" + PlayerStats[selected].CurrentHealth + "/" + PlayerStats[selected].MaximumHealth;
+		StatusMp.text = "" + PlayerStats[selected].CurrentMp + "/" + PlayerStats[selected].MaximumMp;
+		StatusStrength.text = PlayerStats[selected].Strength.ToString();
+		StatusDefense.text = PlayerStats[selected].Defense.ToString();
+		StatusWeaponEquipped.text = !string.IsNullOrEmpty(PlayerStats[selected].EquippedWeapon) ? PlayerStats[selected].EquippedWeapon : "None";
+		StatusWeaponPower.text = PlayerStats[selected].WeaponPower.ToString();
+		StatusArmorEquipped.text = !string.IsNullOrEmpty(PlayerStats[selected].EquippedArmor) ? PlayerStats[selected].EquippedArmor : "None";
+		StatusArmorPower.text = PlayerStats[selected].ArmorPower.ToString();
+		StatusExp.text = (PlayerStats[selected].ExpToNextLevel[PlayerStats[selected].PlayerLevel] - PlayerStats[selected].CurrentExp).ToString();
+
+		StatusImage.sprite = PlayerStats[selected].CharacterImage;
+	}
 }
