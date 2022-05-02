@@ -28,6 +28,7 @@ public class GameMenu : MonoBehaviour {
 	public Text[] itemCharChoiceNames;
 
 	public static GameMenu instance;
+	public Text goldText;
 
 	// Use this for initialization
 	void Start () {
@@ -75,6 +76,9 @@ public class GameMenu : MonoBehaviour {
 				CharStatHolder[i].SetActive(false);
             }
         }
+
+		goldText.text = GameManager.instance.currentGold.ToString() + "g";
+
     }
 
 	public void ToggleWindow(int windowNumber)

@@ -13,6 +13,8 @@ public class GameManager : MonoBehaviour {
 	public int[] numberOfItems;
 	public Item[] referenceItems;
 
+	public int currentGold;
+
 	// Use this for initialization
 	void Start () {
 		instance = this;
