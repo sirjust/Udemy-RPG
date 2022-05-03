@@ -7,7 +7,7 @@ public class GameManager : MonoBehaviour {
 	public static GameManager instance;
 	public CharacterStats[] PlayerStats;
 
-	public bool GameMenuOpen, DialogActive, FadingBetweenAreas;
+	public bool GameMenuOpen, DialogActive, FadingBetweenAreas, ShopActive;
 
 	public string[] itemsHeld;
 	public int[] numberOfItems;
@@ -26,7 +26,7 @@ public class GameManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if(GameMenuOpen || DialogActive || FadingBetweenAreas)
+		if(GameMenuOpen || DialogActive || FadingBetweenAreas || ShopActive)
         {
 			PlayerController.instance.CanMove = false;
         } else
