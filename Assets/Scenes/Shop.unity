@@ -4887,6 +4887,160 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 228429213}
   m_CullTransparentMesh: 0
+--- !u!1 &243212785
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 243212788}
+  - component: {fileID: 243212787}
+  - component: {fileID: 243212786}
+  - component: {fileID: 243212789}
+  m_Layer: 0
+  m_Name: Shopkeeper
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!61 &243212786
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 243212785}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.029981256, y: -1.4091249}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.75, y: 0.9375}
+    newSize: {x: 0.75, y: 0.9375}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.250459, y: 4.90175}
+  m_EdgeRadius: 0
+--- !u!212 &243212787
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 243212785}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 635107327
+  m_SortingLayer: 1
+  m_SortingOrder: 1
+  m_Sprite: {fileID: 21300048, guid: fb8cc55af4b7a034584793949fd90500, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 0.75, y: 0.9375}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!4 &243212788
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 243212785}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 3.47, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &243212789
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 243212785}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e56817ae3c79d94390ab1cccf54e64a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ItemsForSale:
+  - Health Potion
+  - Mana Potion
+  - 
+  - 
+  - Iron Armor
+  - Leather Armor
+  - 
+  - 
+  - Wooden Sword
+  - Iron Sword
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
 --- !u!1 &267107247
 GameObject:
   m_ObjectHideFlags: 0
@@ -7247,6 +7401,89 @@ MonoBehaviour:
   buyMenu: {fileID: 906884157}
   sellMenu: {fileID: 788240172}
   goldText: {fileID: 2029271013}
+  itemsForSale: []
+  buyItemButtons:
+  - {fileID: 36298414}
+  - {fileID: 1737408434}
+  - {fileID: 283352853}
+  - {fileID: 1058950790}
+  - {fileID: 355894307}
+  - {fileID: 1145789236}
+  - {fileID: 91300501}
+  - {fileID: 728527795}
+  - {fileID: 441935835}
+  - {fileID: 1980308773}
+  - {fileID: 308395480}
+  - {fileID: 1347963963}
+  - {fileID: 99697893}
+  - {fileID: 1642334946}
+  - {fileID: 1524813976}
+  - {fileID: 69359885}
+  - {fileID: 923901851}
+  - {fileID: 1828413868}
+  - {fileID: 796490061}
+  - {fileID: 797967481}
+  - {fileID: 1133651854}
+  - {fileID: 977473018}
+  - {fileID: 1078935331}
+  - {fileID: 1656424197}
+  - {fileID: 1945691142}
+  - {fileID: 1226647194}
+  - {fileID: 1904325769}
+  - {fileID: 1967625687}
+  - {fileID: 1846253787}
+  - {fileID: 81135509}
+  - {fileID: 1518046136}
+  - {fileID: 141951601}
+  - {fileID: 1643098737}
+  - {fileID: 1663361641}
+  - {fileID: 767115117}
+  - {fileID: 1433787726}
+  - {fileID: 487062629}
+  - {fileID: 1249804900}
+  - {fileID: 1035829096}
+  - {fileID: 312227257}
+  sellItemButtons:
+  - {fileID: 365026863}
+  - {fileID: 1504964725}
+  - {fileID: 297847794}
+  - {fileID: 873703574}
+  - {fileID: 82354785}
+  - {fileID: 2109894566}
+  - {fileID: 1801963293}
+  - {fileID: 2073298353}
+  - {fileID: 349649642}
+  - {fileID: 368871669}
+  - {fileID: 46935703}
+  - {fileID: 818357817}
+  - {fileID: 150239413}
+  - {fileID: 1939276107}
+  - {fileID: 1134951337}
+  - {fileID: 1530074725}
+  - {fileID: 1914092611}
+  - {fileID: 1871907360}
+  - {fileID: 1687262554}
+  - {fileID: 1139372408}
+  - {fileID: 304864442}
+  - {fileID: 1581853878}
+  - {fileID: 859612368}
+  - {fileID: 21990123}
+  - {fileID: 859230732}
+  - {fileID: 672273201}
+  - {fileID: 1593909461}
+  - {fileID: 1197868744}
+  - {fileID: 12741464}
+  - {fileID: 1123272455}
+  - {fileID: 975544231}
+  - {fileID: 1800974327}
+  - {fileID: 1604360903}
+  - {fileID: 569679884}
+  - {fileID: 985501023}
+  - {fileID: 1224721462}
+  - {fileID: 683293644}
+  - {fileID: 1701705763}
+  - {fileID: 1926702545}
+  - {fileID: 2043928836}
 --- !u!1 &420604493
 GameObject:
   m_ObjectHideFlags: 0
