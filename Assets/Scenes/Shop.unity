@@ -7484,6 +7484,13 @@ MonoBehaviour:
   - {fileID: 1701705763}
   - {fileID: 1926702545}
   - {fileID: 2043928836}
+  selectedItem: {fileID: 0}
+  buyItemName: {fileID: 1160635380}
+  buyItemDescription: {fileID: 1391293969}
+  buyItemValue: {fileID: 150303425}
+  sellItemName: {fileID: 743160595}
+  sellItemDescription: {fileID: 985942631}
+  sellItemValue: {fileID: 1528256302}
 --- !u!1 &420604493
 GameObject:
   m_ObjectHideFlags: 0
@@ -23751,6 +23758,14 @@ Prefab:
         type: 2}
       propertyPath: currentGold
       value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 1875381940974714, guid: 65420c377bb35fa469c68ca4c98bb0e4, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1051100804922298, guid: 65420c377bb35fa469c68ca4c98bb0e4, type: 2}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 65420c377bb35fa469c68ca4c98bb0e4, type: 2}
