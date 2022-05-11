@@ -53,3 +53,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   UICanvas: {fileID: 1946268220048552, guid: b7bcfe1579b333d4abf86dec2e9f534c, type: 2}
   Player: {fileID: 1283130788030890, guid: 4a214e698d5c607468000452f9345267, type: 2}
+  Manager: {fileID: 1485409248168308, guid: 65420c377bb35fa469c68ca4c98bb0e4, type: 2}
+  Audio: {fileID: 0}

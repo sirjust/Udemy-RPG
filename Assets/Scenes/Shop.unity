@@ -5367,6 +5367,10 @@ Prefab:
       propertyPath: m_AnchoredPosition.x
       value: -28.200195
       objectReference: {fileID: 0}
+    - target: {fileID: 1946268220048552, guid: b7bcfe1579b333d4abf86dec2e9f534c, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b7bcfe1579b333d4abf86dec2e9f534c, type: 2}
   m_IsPrefabAsset: 0
@@ -5566,6 +5570,10 @@ Prefab:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1485409248168308, guid: 65420c377bb35fa469c68ca4c98bb0e4, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 65420c377bb35fa469c68ca4c98bb0e4, type: 2}
   m_IsPrefabAsset: 0
@@ -5665,6 +5673,11 @@ Prefab:
       propertyPath: Map
       value: 
       objectReference: {fileID: 502801575}
+    - target: {fileID: 114519685819048034, guid: 1fd9c3e5fd95a6a4d9ce1d9f70724bfd,
+        type: 2}
+      propertyPath: musicToPlay
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1fd9c3e5fd95a6a4d9ce1d9f70724bfd, type: 2}
   m_IsPrefabAsset: 0

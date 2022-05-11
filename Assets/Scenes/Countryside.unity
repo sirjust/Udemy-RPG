@@ -8175,6 +8175,11 @@ Prefab:
       propertyPath: Map
       value: 
       objectReference: {fileID: 809426518}
+    - target: {fileID: 114519685819048034, guid: 1fd9c3e5fd95a6a4d9ce1d9f70724bfd,
+        type: 2}
+      propertyPath: musicToPlay
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1fd9c3e5fd95a6a4d9ce1d9f70724bfd, type: 2}
   m_IsPrefabAsset: 0
