@@ -34,7 +34,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1333901577484672}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0.5812731, y: 0.31934333, z: -10.065448}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -54,4 +54,4 @@ MonoBehaviour:
   UICanvas: {fileID: 1946268220048552, guid: b7bcfe1579b333d4abf86dec2e9f534c, type: 2}
   Player: {fileID: 1283130788030890, guid: 4a214e698d5c607468000452f9345267, type: 2}
   Manager: {fileID: 1485409248168308, guid: 65420c377bb35fa469c68ca4c98bb0e4, type: 2}
-  Audio: {fileID: 0}
+  Audio: {fileID: 1499295964500262, guid: cda59e887dae2fc4882d863ce3c1d677, type: 2}
