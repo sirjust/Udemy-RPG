@@ -87,7 +87,6 @@ public class QuestManager : MonoBehaviour {
 
 	public void SaveQuestData()
 	{
-		Debug.Log("Testing save quest data");
 		for (int i = 0; i < questMarkerNames.Length; i++)
 		{
 			if (questMarkersComplete[i])
