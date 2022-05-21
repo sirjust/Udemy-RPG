@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour {
@@ -8,7 +6,7 @@ public class GameManager : MonoBehaviour {
 	public static GameManager instance;
 	public CharacterStats[] PlayerStats;
 
-	public bool GameMenuOpen, DialogActive, FadingBetweenAreas, ShopActive;
+	public bool GameMenuOpen, DialogActive, FadingBetweenAreas, ShopActive, BattleActive;
 
 	public string[] itemsHeld;
 	public int[] numberOfItems;
@@ -27,7 +25,7 @@ public class GameManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if(GameMenuOpen || DialogActive || FadingBetweenAreas || ShopActive)
+		if(GameMenuOpen || DialogActive || FadingBetweenAreas || ShopActive || BattleActive)
         {
 			PlayerController.instance.CanMove = false;
         } else
