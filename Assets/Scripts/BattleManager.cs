@@ -17,6 +17,12 @@ public class BattleManager : MonoBehaviour {
 
 	public List<BattleChar> activeBattlers = new List<BattleChar>();
 
+	public int currentTurn;
+	public bool turnWaiting;
+
+	public GameObject uiButtonsHolder;
+
+
 	// Use this for initialization
 	void Start () {
 		instance = this;
@@ -28,6 +34,27 @@ public class BattleManager : MonoBehaviour {
         if (Input.GetKeyDown(KeyCode.T))
         {
 			BattleStart(new string[] { "Eyeball", "Spider", "Skeleton", "Skeleton" });
+        }
+
+        if (battleActive)
+        {
+            if (turnWaiting)
+            {
+                if (activeBattlers[currentTurn].isPlayer)
+                {
+					uiButtonsHolder.SetActive(true);
+                } else
+                {
+					uiButtonsHolder.SetActive(false);
+
+					// enemy should attack
+                }
+            }
+
+            if (Input.GetKeyDown(KeyCode.N))
+            {
+				NextTurn();
+            }
         }
 	}
 
@@ -85,6 +112,65 @@ public class BattleManager : MonoBehaviour {
                     }
                 }
             }
+
+			turnWaiting = true;
+			currentTurn = Random.Range(0, activeBattlers.Count);
         }
     }
+
+	public void NextTurn()
+    {
+		currentTurn++;
+		if (currentTurn >= activeBattlers.Count) currentTurn = 0;
+		turnWaiting = true;
+		UpdateBattle();
+	}
+
+	public void UpdateBattle()
+    {
+		bool allEnemiesDead = true;
+		bool allPlayersDead = true;
+
+		for (int i = 0; i < activeBattlers.Count; i++)
+		{
+			if (activeBattlers[i].currentHp < 0)
+			{
+				activeBattlers[i].currentHp = 0;
+			}
+
+			if (activeBattlers[i].currentHp == 0)
+			{
+				// Handle dead battler
+			}
+			else
+			{
+				if (activeBattlers[i].isPlayer)
+				{
+					allPlayersDead = false;
+				}
+				else
+				{
+					allEnemiesDead = false;
+				}
+			}
+		}
+        
+		if(allEnemiesDead || allPlayersDead)
+        {
+            if (allEnemiesDead)
+            {
+				Debug.Log("All enemies dead");
+                // End battle in victory
+            }
+            else
+            {
+				Debug.Log("All players dead");
+				// End battle in defeat
+            }
+
+			battleScene.SetActive(false);
+			GameManager.instance.BattleActive = false;
+			battleActive = false;
+		}
+	}
 }
