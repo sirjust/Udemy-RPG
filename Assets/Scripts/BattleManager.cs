@@ -27,7 +27,7 @@ public class BattleManager : MonoBehaviour {
 	void Update () {
         if (Input.GetKeyDown(KeyCode.T))
         {
-			BattleStart(new string[] { "Eyeball", "Spider" });
+			BattleStart(new string[] { "Eyeball", "Spider", "Skeleton", "Skeleton" });
         }
 	}
 
@@ -55,7 +55,33 @@ public class BattleManager : MonoBehaviour {
 							BattleChar newPlayer = Instantiate(playerPrefabs[j], playerPositions[i].position, playerPositions[i].rotation);
 							newPlayer.transform.parent = playerPositions[i];
 							activeBattlers.Add(newPlayer);
-                        }
+
+							CharacterStats player = GameManager.instance.PlayerStats[i];
+							activeBattlers[i].currentHp = player.CurrentHealth;
+							activeBattlers[i].maxHp = player.MaximumHealth;
+							activeBattlers[i].currentMp = player.CurrentMp;
+							activeBattlers[i].maxMp = player.MaximumMp;
+							activeBattlers[i].strength = player.Strength;
+							activeBattlers[i].defense = player.Defense; 
+							activeBattlers[i].weaponPower = player.WeaponPower;
+							activeBattlers[i].armorPower = player.ArmorPower;
+						}
+                    }
+                }
+            }
+
+            for (int i = 0; i < enemiesToSpawn.Length; i++)
+            {
+				if(enemiesToSpawn[i] != "")
+                {
+                    for (int j = 0; j < enemyPrefabs.Length; j++)
+                    {
+						if(enemyPrefabs[j].charName == enemiesToSpawn[i])
+                        {
+							BattleChar newEnemy = Instantiate(enemyPrefabs[j], enemyPositions[i].position, enemyPositions[i].rotation);
+							newEnemy.transform.parent = enemyPositions[i];
+							activeBattlers.Add(newEnemy);
+						}
                     }
                 }
             }
